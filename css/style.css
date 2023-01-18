@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+#navbar {
+  position: fixed;
+  background: black;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#navbar ul li {
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  list-style: none;
+}
+
+#navbar ul li:hover {
+  background: rgb(69, 69, 211);
+  transform: rotate(360deg);
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 30px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.001),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(http://unbornmind.com/wp-content/uploads/2014/08/Dterrain.jpg) center
+      no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  margin: 20px;
+  font-size: 40px;
+  animation: text 1s ease;
+}
+
+@keyframes text {
+  0% {
+    margin-bottom: 250px;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 30px;
+  }
+}
+
+#welcome-section p {
+  font-size: 25px;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: rgb(31, 28, 27);
+}
+
+.project-heading {
+  text-align: center;
+  margin: 40px;
+  font-size: 30px;
+}
+
+.project {
+  border: 2px solid rgb(236, 232, 232);
+  padding: 25px;
+}
+
+.project img {
+  width: 50vh;
+}
+
+.project-link {
+  text-decoration: none;
+  width: 80%;
+}
+
+.project-tile {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.show-all {
+  text-decoration: none;
+  width: 250px;
+  background: #383bf1;
+  color: #f3f3f3;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 15px;
+  text-align: center;
+  transition: 0.4s ease;
+  margin: 20px;
+}
+
+.show-all:hover {
+  border-radius: 15px;
+  background: #5659e9;
+}
+
+@media screen and (min-width: 976px) {
+  .show-all {
+    width: 400px;
+  }
+}
+
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url(https://www.hlimg.com/images/stories/738X538/01-hostelworld_1512536891m.jpg)
+      center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 95vh;
+}
+
+#contact h1 {
+  padding: 120px 0 30px 0;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(187, 191, 223);
+}
+
+#contact p {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(152, 248, 252);
+}
+
+#contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+  font-size: 20px;
+}
+
+.contact-details {
+  text-align: center;
+  margin: 45px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: #4a4df5;
+  color: #f3f3f3;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  transition: 0.3s ease;
+}
+
+.contact-details:hover {
+  opacity: 0.6;
+  margin-top: 10px;
+  transform: rotate(360deg);
+}
+
+footer {
+  background: black;
+  color: white;
+}
+
+footer p {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+footer p a:hover {
+  color: #4a4df5;
+}
